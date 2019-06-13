@@ -1,0 +1,6 @@
+Modificaremos el archivo .env .env.example localizado en el root del back de laravel con nuestro nombre BBDD=gestion, user y pass de nuestro MySQL
+
+NEcesitaremos establecer unas foreigh key desde la tabla employees a tabla departament, atraves de id_departamento mediante la siguiente query:
+->
+
+Para lanzar React npm install && npm run dev
