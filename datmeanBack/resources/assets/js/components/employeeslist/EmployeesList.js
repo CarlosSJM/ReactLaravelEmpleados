@@ -17,7 +17,6 @@ class EmployeesList extends Component {
             })
         })
     }
-
     render () {
         const { employeesData } = this.state
         return (
@@ -42,7 +41,6 @@ class EmployeesList extends Component {
                                             to={`/${employeesData.id}`}
                                             key={employeesData.id}
                                         >
-
                                             <li className="list-group-item">{employeesData.name}</li>
                                             <li className="list-group-item">{employeesData.lastname}</li>
                                             <li className="list-group-item">{employeesData.age}</li>
