@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fdfbb091-b842-467c-b6da-cfa2a2b0e4da" name="Default Changelist" comment="" />
+    <list default="true" id="fdfbb091-b842-467c-b6da-cfa2a2b0e4da" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,8 +60,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/datmeanBack/resources/assets/js/components/createdepartament/CreateDepartament.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="527">
-                  <caret line="31" column="34" lean-forward="true" selection-start-line="31" selection-start-column="34" selection-end-line="31" selection-end-column="34" />
+                <state relative-caret-position="217">
+                  <caret line="18" column="72" selection-start-line="18" selection-start-column="72" selection-end-line="18" selection-end-column="72" />
                   <folding>
                     <element signature="e#0#25#0" expanded="true" />
                   </folding>
@@ -159,6 +162,9 @@
       <find>handleFieldChange</find>
     </findStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -185,8 +191,8 @@
         <option value="$PROJECT_DIR$/datmeanBack/.env" />
         <option value="$PROJECT_DIR$/datmeanBack/resources/assets/js/components/header/Header.js" />
         <option value="$PROJECT_DIR$/datmeanBack/resources/assets/js/components/createemployees/CreateEmployees.js" />
-        <option value="$PROJECT_DIR$/datmeanBack/resources/assets/js/components/createdepartament/CreateDepartament.js" />
         <option value="$PROJECT_DIR$/datmeanBack/resources/assets/js/components/createemployees/Provisionalform.js" />
+        <option value="$PROJECT_DIR$/datmeanBack/resources/assets/js/components/createdepartament/CreateDepartament.js" />
       </list>
     </option>
   </component>
@@ -279,6 +285,7 @@
     <option name="width" value="698" />
     <option name="height" value="999" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -377,6 +384,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="editor.config.ad.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/datmeanBack/resources/assets/js/components" />
@@ -421,16 +429,15 @@
       <workItem from="1560283621547" duration="13039000" />
       <workItem from="1560298821061" duration="5792000" />
       <workItem from="1560325744560" duration="29109000" />
-      <workItem from="1560413188654" duration="23290000" />
+      <workItem from="1560413188654" duration="25327000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="71230000" />
+    <option name="totallyTimeSpent" value="73267000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1444563" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -446,7 +453,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.054171182" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.29035753" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -646,8 +653,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/datmeanBack/resources/assets/js/components/createdepartament/CreateDepartament.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="31" column="34" lean-forward="true" selection-start-line="31" selection-start-column="34" selection-end-line="31" selection-end-column="34" />
+        <state relative-caret-position="217">
+          <caret line="18" column="72" selection-start-line="18" selection-start-column="72" selection-end-line="18" selection-end-column="72" />
           <folding>
             <element signature="e#0#25#0" expanded="true" />
           </folding>
