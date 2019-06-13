@@ -27,16 +27,14 @@ class CreateDepartament extends Component {
         }
 
         axios.post('/api/Departament', newDepartament)
-            .then(response => {
-                // redirect to the homepage
-                history.push('/');
-            })
+            .then(
+                alert('departamento creado con exito')
+            )
             .catch(error => {
                 const {errors} = error.response.data;
-                console.log(errors);
+                console.log(errors)
             })
     }
-
     render () {
         return (
             <div className='container py-4'>

@@ -80276,10 +80276,7 @@ var CreateDepartament = function (_Component) {
                 departament_name: this.state.name
             };
 
-            __WEBPACK_IMPORTED_MODULE_0_axios___default.a.post('/api/Departament', newDepartament).then(function (response) {
-                // redirect to the homepage
-                history.push('/');
-            }).catch(function (error) {
+            __WEBPACK_IMPORTED_MODULE_0_axios___default.a.post('/api/Departament', newDepartament).then(alert('departamento creado con exito')).catch(function (error) {
                 var errors = error.response.data.errors;
 
                 console.log(errors);
