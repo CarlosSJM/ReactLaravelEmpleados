@@ -28,7 +28,7 @@ class CreateDepartament extends Component {
 
         axios.post('/api/Departament', newDepartament)
             .then(
-                alert('departamento creado con exito')
+                alert('departamento creado con exito!')
             )
             .catch(error => {
                 const {errors} = error.response.data;
