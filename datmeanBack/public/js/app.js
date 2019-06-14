@@ -80375,16 +80375,16 @@ var CreateEmployees = function (_Component) {
         var _this = _possibleConstructorReturn(this, (CreateEmployees.__proto__ || Object.getPrototypeOf(CreateEmployees)).call(this, props));
 
         _this.state = {
-            name: '',
-            lastname: '',
-            age: '',
-            gender: '',
-            id_departament: '',
-            contract_date: ''
+            name: 'Pilar',
+            lastname: 'Moreno',
+            age: 30,
+            gender: 'femenino',
+            id_departament: 2,
+            contract_date: '2019-06-14'
         };
         departamentOptions: [];
         sexoOptions: ['Masculino', 'Femenino'];
-        _this.handleFieldChangename = _this.handleFieldChangename.bind(_this);
+
         _this.handleFieldChange = _this.handleFieldChange.bind(_this);
         _this.handleCreateEmployee = _this.handleCreateEmployee.bind(_this);
         return _this;
@@ -80393,11 +80393,6 @@ var CreateEmployees = function (_Component) {
 
 
     _createClass(CreateEmployees, [{
-        key: 'handleFieldChangename',
-        value: function handleFieldChangename(event) {
-            this.setState(_defineProperty({}, event.target.name, event.target.value));
-        }
-    }, {
         key: 'handleFieldChange',
         value: function handleFieldChange(event) {
             this.setState(_defineProperty({}, event.target.name, event.target.value));
@@ -80412,23 +80407,22 @@ var CreateEmployees = function (_Component) {
 
             var newEmployee = {
                 name: this.state.name,
-                lastname: this.state.name,
-                age: this.state.name,
-                gender: this.state.name,
-                id_departament: this.state.name,
-                contract_date: this.state.name
-                //lastname age gender id_departament contract_date
+                lastname: this.state.lastname,
+                age: this.state.age,
+                gender: this.state.gender,
+                id_departament: this.state.id_departament,
+                contract_date: this.state.contract_date
+                //name lastname age gender id_departament contract_date
 
-                /*COMUNICACION API*/
-            };__WEBPACK_IMPORTED_MODULE_0_axios___default.a.post('/api/Employees', newEmployee).then(function (response) {
-                // redirect to the homepage
-                history.push('/');
-            }).catch(function (error) {
+                /*COMUNICACION CON API*/
+            };__WEBPACK_IMPORTED_MODULE_0_axios___default.a.post('/api/Employees', newEmployee).then(alert('habemus nuevo empleado')).catch(function (error) {
                 var errors = error.response.data.errors;
 
                 console.log(errors);
             });
         }
+        /*Get para traer datos de departamento para input select*/
+
     }, {
         key: 'componentDidMount',
         value: function componentDidMount() {
@@ -80454,7 +80448,7 @@ var CreateEmployees = function (_Component) {
                         { className: 'col-md-6' },
                         __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
                             'div',
-                            { className: 'card' },
+                            { className: 'container py-4' },
                             __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
                                 'div',
                                 { className: 'card-header' },
@@ -80480,7 +80474,7 @@ var CreateEmployees = function (_Component) {
                                             className: 'form-control',
                                             name: 'name',
                                             value: this.state.name,
-                                            onChange: this.handleFieldChangename
+                                            onChange: this.handleFieldChange
                                         }),
                                         __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
                                             'label',
@@ -80492,7 +80486,7 @@ var CreateEmployees = function (_Component) {
                                             type: 'text',
                                             className: 'form-control',
                                             name: 'lastname',
-                                            value: this.state.name,
+                                            value: this.state.lastname,
                                             onChange: this.handleFieldChange
                                         }),
                                         __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
@@ -80506,7 +80500,7 @@ var CreateEmployees = function (_Component) {
                                             className: 'form-control',
                                             name: 'age',
                                             min: '0', max: '100',
-                                            value: this.state.name,
+                                            value: this.state.age,
                                             onChange: this.handleFieldChange
                                         }),
                                         __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
@@ -80519,7 +80513,7 @@ var CreateEmployees = function (_Component) {
                                             type: 'text',
                                             className: 'form-control',
                                             name: 'gender',
-                                            value: this.state.name,
+                                            value: this.state.gender,
                                             onChange: this.handleFieldChange
                                         }),
                                         __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
@@ -80533,7 +80527,7 @@ var CreateEmployees = function (_Component) {
                                             className: 'form-control',
                                             name: 'id_departament',
                                             min: '1', max: '20',
-                                            value: this.state.name,
+                                            value: this.state.id_departament,
                                             onChange: this.handleFieldChange
                                         }),
                                         __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
@@ -80546,7 +80540,7 @@ var CreateEmployees = function (_Component) {
                                             type: 'date',
                                             className: 'form-control',
                                             name: 'contract_date',
-                                            value: this.state.name,
+                                            value: this.state.contract_date,
                                             onChange: this.handleFieldChange
                                         })
                                     ),

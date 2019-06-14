@@ -6,25 +6,20 @@ class CreateEmployees extends Component {
     constructor (props) {
         super(props)
         this.state = {
-            name: '',
-            lastname: '',
-            age: '',
-            gender: '',
-            id_departament: '',
-            contract_date: ''
+                name: 'Pilar',
+                lastname: 'Moreno',
+                age: 30,
+                gender: 'Femenino',
+                id_departament: 2,
+                contract_date: '2019-06-14'
         }
         departamentOptions:[]
         sexoOptions:['Masculino', 'Femenino']
-        this.handleFieldChangename = this.handleFieldChangename.bind(this)
+
         this.handleFieldChange = this.handleFieldChange.bind(this)
         this.handleCreateEmployee = this.handleCreateEmployee.bind(this)
     }
     /*Definicion de HANDLERS*/
-    handleFieldChangename (event) {
-        this.setState({
-            [event.target.name]: event.target.value
-        })
-    }
     handleFieldChange (event) {
         this.setState({
             [event.target.name]: event.target.value
@@ -37,25 +32,25 @@ class CreateEmployees extends Component {
 
         const newEmployee = {
             name : this.state.name,
-            lastname : this.state.name,
-            age : this.state.name,
-            gender : this.state.name,
-            id_departament : this.state.name,
-            contract_date : this.state.name
+            lastname : this.state.lastname,
+            age : this.state.age,
+            gender : this.state.gender,
+            id_departament : this.state.id_departament,
+            contract_date : this.state.contract_date
         }
-        //lastname age gender id_departament contract_date
+        //name lastname age gender id_departament contract_date
 
-     /*COMUNICACION API*/
+     /*COMUNICACION CON API*/
      axios.post('/api/Employees', newEmployee)
-            .then(response => {
-                // redirect to the homepage
-                history.push('/')
-            })
+            .then(
+                alert('habemus nuevo empleado!')
+            )
             .catch(error => {
                 const {errors} = error.response.data;
                 console.log(errors);
             })
     }
+    /*Get para traer datos de departamento para input select*/
     componentDidMount () {
         axios.get('/api/Departament').then(response => {
             this.setState({
@@ -68,7 +63,7 @@ class CreateEmployees extends Component {
             <div className='container py-4'>
                 <div className='row justify-content-center'>
                     <div className='col-md-6'>
-                        <div className='card'>
+                        <div className='container py-4'>
                             <div className='card-header'>Crea un nuevo empleado</div>
                             <div className='card-body'>
                                 <form onSubmit={this.handleCreateEmployee}>
@@ -80,7 +75,7 @@ class CreateEmployees extends Component {
                                             className={`form-control`}
                                             name='name'
                                             value={this.state.name}
-                                            onChange={this.handleFieldChangename}
+                                            onChange={this.handleFieldChange}
                                         />
                                         <label htmlFor='lastname'>apellido </label>
                                         <input
@@ -88,7 +83,7 @@ class CreateEmployees extends Component {
                                             type='text'
                                             className={`form-control`}
                                             name='lastname'
-                                            value={this.state.name}
+                                            value={this.state.lastname}
                                             onChange={this.handleFieldChange}
                                         />
                                         <label htmlFor='age'>Edad </label>
@@ -98,7 +93,7 @@ class CreateEmployees extends Component {
                                             className={`form-control`}
                                             name='age'
                                             min="0" max="100"
-                                            value={this.state.name}
+                                            value={this.state.age}
                                             onChange={this.handleFieldChange}
                                         />
                                         <label htmlFor='gender'>Genero</label>
@@ -107,26 +102,26 @@ class CreateEmployees extends Component {
                                             type='text'
                                             className={`form-control`}
                                             name='gender'
-                                            value={this.state.name}
+                                            value={this.state.gender}
                                             onChange={this.handleFieldChange}
                                         />
-                                        <label htmlFor='id_departament'>departamento</label>
+                                        <label htmlFor='id_departament'>Departamento</label>
                                         <input
                                             id='id_departament'
                                             type='number'
                                             className={`form-control`}
                                             name='id_departament'
                                             min="1" max="20"
-                                            value={this.state.name}
+                                            value={this.state.id_departament}
                                             onChange={this.handleFieldChange}
                                         />
-                                        <label htmlFor='contract_date'>fecha de contrato</label>
+                                        <label htmlFor='contract_date'>Fecha de contrato</label>
                                         <input
                                             id='contract_date'
                                             type='date'
                                             className={`form-control`}
                                             name='contract_date'
-                                            value={this.state.name}
+                                            value={this.state.contract_date}
                                             onChange={this.handleFieldChange}
                                         />
 
