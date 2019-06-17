@@ -1,6 +1,6 @@
 import axios from 'axios'
 import React, {Component} from 'react'
-
+import {ToastsContainer, ToastsStore} from 'react-toasts'
 
 class CreateEmployees extends Component {
     constructor (props) {
@@ -11,11 +11,10 @@ class CreateEmployees extends Component {
                 age: 30,
                 gender: 'Femenino',
                 id_departament: 2,
-                contract_date: '2019-06-14'
+                contract_date: '2019-06-14',
+            departamentOptions:[],
+            sexoOptions:[ {id:1, gender:'Masculino'},{id:2, gender:'Femenino'},{id:3, gender:'NS/NC'}]
         }
-        departamentOptions:[]
-        sexoOptions:['Masculino', 'Femenino']
-
         this.handleFieldChange = this.handleFieldChange.bind(this)
         this.handleCreateEmployee = this.handleCreateEmployee.bind(this)
     }
@@ -28,8 +27,6 @@ class CreateEmployees extends Component {
     handleCreateEmployee (event) {
         event.preventDefault()
         /*preparamos lod datos recogido en el formulario para enviarlo por POST*/
-        const { history } = this.props
-
         const newEmployee = {
             name : this.state.name,
             lastname : this.state.lastname,
@@ -43,7 +40,8 @@ class CreateEmployees extends Component {
      /*COMUNICACION CON API*/
      axios.post('/api/Employees', newEmployee)
             .then(
-                alert('habemus nuevo empleado!')
+                //mensaje de exito en el formulario
+                ToastsStore.success("Nuevo Empleado creado!! Con ExitoooOOO!!!")
             )
             .catch(error => {
                 const {errors} = error.response.data;
@@ -51,14 +49,17 @@ class CreateEmployees extends Component {
             })
     }
     /*Get para traer datos de departamento para input select*/
-    componentDidMount () {
+    componentWillMount () {
         axios.get('/api/Departament').then(response => {
-            this.setState({
-                departamentOptions: response.data
-            })
+             this.setState({
+                 departamentOptions: response.data
+             })
         })
     }
     render () {
+        const { departamentOptions } = this.state
+        const { sexoOptions } = this.state
+
         return (
             <div className='container py-4'>
                 <div className='row justify-content-center'>
@@ -97,24 +98,23 @@ class CreateEmployees extends Component {
                                             onChange={this.handleFieldChange}
                                         />
                                         <label htmlFor='gender'>Genero</label>
-                                        <input
-                                            id='gender'
-                                            type='text'
-                                            className={`form-control`}
-                                            name='gender'
-                                            value={this.state.gender}
-                                            onChange={this.handleFieldChange}
-                                        />
+                                        <select className={`form-control`}
+                                                name="gender"
+                                                value={this.state.gender}
+                                                onChange={this.handleFieldChange}>
+                                            {sexoOptions.map((item, key) => {
+                                                return <option key={key} value={item.gender}>{item.gender}</option>;
+                                            })}
+                                        </select>
                                         <label htmlFor='id_departament'>Departamento</label>
-                                        <input
-                                            id='id_departament'
-                                            type='number'
-                                            className={`form-control`}
-                                            name='id_departament'
-                                            min="1" max="20"
-                                            value={this.state.id_departament}
-                                            onChange={this.handleFieldChange}
-                                        />
+                                        <select className={`form-control`}
+                                                name="id_departament"
+                                                value={this.state.id_departament}
+                                                onChange={this.handleFieldChange}>
+                                            {departamentOptions.map((item, key) => {
+                                                return <option key={key} value={item.id}>{item.departament_name}</option>;
+                                            })}
+                                        </select>
                                         <label htmlFor='contract_date'>Fecha de contrato</label>
                                         <input
                                             id='contract_date'
@@ -127,6 +127,7 @@ class CreateEmployees extends Component {
 
                                     </div>
                                     <button className='btn btn-primary'>Crear Nuevo nuevo empleado</button>
+                                    <ToastsContainer store={ToastsStore}/>
                                 </form>
                             </div>
                         </div>

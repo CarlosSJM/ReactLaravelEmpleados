@@ -5,6 +5,8 @@ import MenuItem from '@material-ui/core/MenuItem';
 import TextField from '@material-ui/core/TextField';
 //import axios from "axios";
 
+/*//////////////////COMPO DE PRUEBAS//////////////////////*/
+
 const currencies = [
     {
         value: 'USD',
