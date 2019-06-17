@@ -1,5 +1,7 @@
 import axios from 'axios'
 import React, {Component} from 'react'
+import {ToastsContainer, ToastsStore} from "react-toasts"
+
 
 class CreateDepartament extends Component {
     constructor (props) {
@@ -20,15 +22,14 @@ class CreateDepartament extends Component {
     handleCreateDepartament (event) {
         event.preventDefault()
 
-        const { history } = this.props
-
         const newDepartament = {
             departament_name : this.state.name
         }
 
         axios.post('/api/Departament', newDepartament)
             .then(
-                alert('departamento creado con exito!')
+                ToastsStore.success("Nuevo Departamento Creado!! Con ExitoooOOO!!")
+                //alert('departamento creado con exito!')
             )
             .catch(error => {
                 const {errors} = error.response.data;
@@ -56,6 +57,7 @@ class CreateDepartament extends Component {
                                         />
                                     </div>
                                     <button className='btn btn-primary'>Crear Nuevo departamento</button>
+                                    <ToastsContainer store={ToastsStore}/>
                                 </form>
                             </div>
                         </div>

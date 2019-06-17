@@ -1,6 +1,6 @@
 import axios from 'axios'
 import React, { Component } from 'react'
-import { Link } from 'react-router-dom'
+//import { Link } from 'react-router-dom'
 
 class EmployeesList extends Component {
     constructor () {
@@ -53,9 +53,9 @@ class EmployeesList extends Component {
                                         </ul>
                                     ))}
                                 </ul>
-                                <Link className='btn btn-primary btn-sm mb-3' to='2'>
+                                {/*<Link className='btn btn-primary btn-sm mb-3' to='2'>
                                     Añadir nuevo empleado!
-                                </Link>
+                                </Link>*/}
                             </div>
                         </div>
                     </div>
