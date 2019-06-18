@@ -2,17 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fdfbb091-b842-467c-b6da-cfa2a2b0e4da" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.~lock.Instrucciones_api_datmean.odt#" beforeDir="false" afterPath="$PROJECT_DIR$/.~lock.Instrucciones_api_datmean.odt#" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Instrucciones.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datmeanBack/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/datmeanBack/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/datmeanBack/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/datmeanBack/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/datmeanBack/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/datmeanBack/public/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/datmeanBack/resources/assets/js/components/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/datmeanBack/resources/assets/js/components/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/datmeanBack/resources/assets/js/components/createdepartament/CreateDepartament.js" beforeDir="false" afterPath="$PROJECT_DIR$/datmeanBack/resources/assets/js/components/createdepartament/CreateDepartament.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/datmeanBack/resources/assets/js/components/createemployees/CreateEmployees.js" beforeDir="false" afterPath="$PROJECT_DIR$/datmeanBack/resources/assets/js/components/createemployees/CreateEmployees.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/datmeanBack/resources/assets/js/components/createemployees/Provisionalform.js" beforeDir="false" afterPath="$PROJECT_DIR$/datmeanBack/resources/assets/js/components/createemployees/Provisionalform.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/datmeanBack/resources/assets/js/components/employeeslist/EmployeesList.js" beforeDir="false" afterPath="$PROJECT_DIR$/datmeanBack/resources/assets/js/components/employeeslist/EmployeesList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/datmeanBack/resources/assets/js/components/employeeslist/UiList.js" beforeDir="false" afterPath="$PROJECT_DIR$/datmeanBack/resources/assets/js/components/employeeslist/UiList.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/datmeanBack/resources/assets/js/components/header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/datmeanBack/resources/assets/js/components/header/Header.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -34,7 +26,7 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/datmeanBack/resources/assets/js/components/App.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="17">
+                <state relative-caret-position="34">
                   <caret line="2" column="2" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
                   <folding>
                     <element signature="e#0#40#0" expanded="true" />
@@ -56,8 +48,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/datmeanBack/resources/assets/js/components/employeeslist/EmployeesList.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="102">
-                  <caret line="6" column="10" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
+                <state relative-caret-position="170">
+                  <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
                   <folding>
                     <element signature="e#0#25#0" expanded="true" />
                   </folding>
@@ -65,11 +57,14 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/datmeanBack/resources/assets/js/components/employeeslist/UiList.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state>
-                  <caret column="26" lean-forward="true" selection-start-column="26" selection-end-column="26" />
+                <state relative-caret-position="427">
+                  <caret line="76" column="8" selection-start-line="76" selection-start-column="8" selection-end-line="76" selection-end-column="8" />
+                  <folding>
+                    <element signature="e#0#26#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -86,14 +81,11 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/datmeanBack/resources/assets/js/components/header/Header.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="374">
-                  <caret line="22" column="34" lean-forward="true" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="34" />
-                  <folding>
-                    <element signature="e#0#26#0" expanded="true" />
-                  </folding>
+                <state relative-caret-position="153">
+                  <caret line="9" selection-start-line="9" selection-end-line="9" />
                 </state>
               </provider>
             </entry>
@@ -110,8 +102,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/datmeanBack/resources/assets/js/components/createemployees/CreateEmployees.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="2193">
-                  <caret line="129" column="36" selection-start-line="129" selection-start-column="36" selection-end-line="129" selection-end-column="74" />
+                <state relative-caret-position="850">
+                  <caret line="50" column="68" selection-start-line="50" selection-start-column="68" selection-end-line="50" selection-end-column="68" />
                   <folding>
                     <element signature="e#0#25#0" expanded="true" />
                   </folding>
@@ -199,11 +191,11 @@
         <option value="$PROJECT_DIR$/datmeanBack/resources/assets/js/components/App.js" />
         <option value="$PROJECT_DIR$/datmeanBack/resources/assets/js/components/App.css" />
         <option value="$PROJECT_DIR$/datmeanBack/resources/assets/js/components/employeeslist/EmployeesList.js" />
-        <option value="$PROJECT_DIR$/datmeanBack/resources/assets/js/components/createemployees/CreateEmployees.js" />
         <option value="$PROJECT_DIR$/datmeanBack/resources/assets/js/components/createdepartament/CreateDepartament.js" />
-        <option value="$PROJECT_DIR$/datmeanBack/resources/assets/js/components/employeeslist/UiList.js" />
         <option value="$PROJECT_DIR$/datmeanBack/resources/assets/js/components/createemployees/Provisionalform.js" />
+        <option value="$PROJECT_DIR$/datmeanBack/resources/assets/js/components/createemployees/CreateEmployees.js" />
         <option value="$PROJECT_DIR$/datmeanBack/resources/assets/js/components/header/Header.js" />
+        <option value="$PROJECT_DIR$/datmeanBack/resources/assets/js/components/employeeslist/UiList.js" />
       </list>
     </option>
   </component>
@@ -352,6 +344,16 @@
               <item name="assets" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="createdepartament" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="datmean_prueba" type="b2602c69:ProjectViewProjectNode" />
+              <item name="datmean_prueba" type="462c0819:PsiDirectoryNode" />
+              <item name="datmeanBack" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="createemployees" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -440,16 +442,15 @@
       <workItem from="1560413188654" duration="42785000" />
       <workItem from="1560500788041" duration="2994000" />
       <workItem from="1560549793384" duration="6713000" />
-      <workItem from="1560721932763" duration="8018000" />
+      <workItem from="1560721932763" duration="13428000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="108450000" />
+    <option name="totallyTimeSpent" value="113860000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14925373" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -620,9 +621,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/datmeanBack/resources/assets/js/components/createemployees/Provisionalform.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="60" selection-start-line="7" selection-start-column="60" selection-end-line="7" selection-end-column="60" />
+          <folding>
+            <element signature="e#54#108#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/datmeanBack/resources/assets/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/datmeanBack/resources/assets/js/components/App.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
+        <state relative-caret-position="34">
           <caret line="2" column="2" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
           <folding>
             <element signature="e#0#40#0" expanded="true" />
@@ -631,10 +649,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/datmeanBack/resources/assets/js/components/header/Header.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/datmeanBack/resources/assets/js/components/createemployees/CreateEmployees.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="850">
+          <caret line="50" column="68" selection-start-line="50" selection-start-column="68" selection-end-line="50" selection-end-column="68" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/datmeanBack/resources/assets/js/components/employeeslist/EmployeesList.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="10" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
+        <state relative-caret-position="170">
+          <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
           <folding>
             <element signature="e#0#25#0" expanded="true" />
           </folding>
@@ -648,44 +683,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/datmeanBack/resources/assets/js/components/createemployees/Provisionalform.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="60" selection-start-line="7" selection-start-column="60" selection-end-line="7" selection-end-column="60" />
-          <folding>
-            <element signature="e#54#108#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/datmeanBack/resources/assets/js/components/createemployees/CreateEmployees.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2193">
-          <caret line="129" column="36" selection-start-line="129" selection-start-column="36" selection-end-line="129" selection-end-column="74" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/datmeanBack/resources/assets/js/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/datmeanBack/resources/assets/js/components/employeeslist/UiList.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="26" lean-forward="true" selection-start-column="26" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/datmeanBack/resources/assets/js/components/header/Header.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="34" lean-forward="true" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="34" />
+        <state relative-caret-position="427">
+          <caret line="76" column="8" selection-start-line="76" selection-start-column="8" selection-end-line="76" selection-end-column="8" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>

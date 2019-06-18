@@ -6,8 +6,8 @@ import Tab from '@material-ui/core/Tab/index';
 import EmployeesList from "../employeeslist/EmployeesList";
 import CreateDepartament from "../createdepartament/CreateDepartament"
 import CreateEmployees from "../createemployees/CreateEmployees";
-//import Provisionalform from "../createemployees/Provisionalform";
-//import UiList from "../employeeslist/UiList";
+import Provisionalform from "../createemployees/Provisionalform";
+import UiList from "../employeeslist/UiList";
 
 
 const useStyles = makeStyles({
@@ -40,14 +40,14 @@ export default function Header() {
                 <Tab label="Listado Empleados" />
                 <Tab label="Nuevo Empleado" />
                 <Tab label="Nuevo Departamento" />
-                {/*<Tab label="form pruebas" />
-                <Tab label="Nueva lista pruebas" />*/}
+                <Tab label="form pruebas" />
+                <Tab label="Nueva lista pruebas" />
             </Tabs>
             {value === 0 ? <EmployeesList/> : "" }
             {value === 1 ? <CreateEmployees/>: "" }
             {value === 2 ? <CreateDepartament/> : "" }
-            {/*{value === 3 ? <Provisionalform/> : "" }
-            {value === 4 ? <UiList/> : "" }*/}
+            {value === 3 ? <Provisionalform/> : "" }
+            {value === 4 ? <UiList/> : "" }
         </Paper>
     );
 }

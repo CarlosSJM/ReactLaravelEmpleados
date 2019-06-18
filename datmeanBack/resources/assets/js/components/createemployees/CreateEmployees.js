@@ -48,7 +48,7 @@ class CreateEmployees extends Component {
                 console.log(errors);
             })
     }
-    /*Get para traer datos de departamento para input select*/
+    /*Get para traer datos de departamento para input select ->WillMount para que haga la llamada antes de que renderice*/
     componentWillMount () {
         axios.get('/api/Departament').then(response => {
              this.setState({
